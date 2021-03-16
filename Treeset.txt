@@ -1,0 +1,41 @@
+package com.test.oops;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class Treeset {
+
+	public static void main(String[] args) {
+		TreeSet<String> employee = new TreeSet<String>();
+		employee.add("Ragulkumar");
+		employee.add("Sivaji");
+		employee.add("Soundarya");
+		employee.add("Shyaam");
+		employee.add("Supreeth");
+		System.out.println("Employee Details: " +employee);
+		
+		/*Iterator<String> al = employee.iterator();
+		while(al.hasNext())
+		{
+			System.out.println(al.next());
+		}*/
+		
+		for(String al : employee)
+		{
+			System.out.println(al);
+		}
+		
+		TreeSet<String> id = new TreeSet<String>();
+		id.add("It2024");
+		id.add("It2055");
+		id.add("It2014");
+		id.add("It2066");
+		id.add("It2008");
+		System.out.println("EmployeeID Details: " +id);
+		
+		employee.addAll(id);
+		System.out.println("Employee full details: "+employee);
+		
+	}
+
+}
